@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Program/ Code Labs Academy </title>
+    <link rel="icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="overflow-x-hidden">
+    <main class="flex flex-col min-h-screen">
+        <!--  <header class="header-one">
+            <a class="head-logo" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.19 75.53" class="logo-svg">
+                    <path d="M26.17 15.11h0l-13.08 7.55v15.1h0v15.1l13.08-7.54v-15.1-.01h0l13.08-7.54V7.57l-13.08 7.54zm26.14 0v15.1l13.08-7.54V7.57l-13.08 7.54z" fill="#8857ff"></path>
+                    <path d="M52.32 15.12L39.24 7.56l-.01 15.1 13.08 7.55.01-15.09z" fill="#132ad1"></path>
+                    <g fill="#36ffe2">
+                        <path d="M52.3 15.12l13.09-7.55L52.31.01 39.23 7.56l13.07 7.56z"></path>
+                        <path d="M39.23 7.56L26.16 0 13.08 7.55.01 15.11l13.07 7.56 13.08-7.56h-.01l13.08-7.55z"></path>
+                    </g>
+                    <path d="M.01 15.11L0 60.41l26.15 15.11.01-15.1-13.06-7.55-.02-30.2L.01 15.11z" fill="#132ad1"></path>
+                    <path d="M26.17 60.41v.01 15.1l13.08-7.54v-.01-15.1l-13.08 7.54z" fill="#8857ff"></path>
+                    <path d="M39.24 52.87l-13.07-7.56-13.08 7.55 13.07 7.55h0l13.08-7.54h0 0z" fill="#36ffe2"></path>
+                    <path d="M52.31 60.42v15.1l13.08-7.54v-15.1l-13.08 7.54z" fill="#8857ff"></path>
+                    <path d="M52.32 60.43l-13.08-7.56-.01 15.1 13.08 7.56.01-15.1z" fill="#132ad1"></path>
+                    <path d="M52.3 60.43l13.09-7.55-13.08-7.56-13.08 7.55 13.07 7.56z" fill="#36ffe2"></path>
+                    <path d="M94.24 31a10.52 10.52 0 0 0 7.12-2.4 11.49 11.49 0 0 0 3.69-5.95l.13-.52h-4.78l-.09.28a7 7 0 0 1-2.24 3.25A6 6 0 0 1 94.24 27a6.15 6.15 0 0 1-4.83-2.08 7.7 7.7 0 0 1-1.91-5.42 7.73 7.73 0 0 1 1.92-5.5 6.11 6.11 0 0 1 4.82-2.08 6 6 0 0 1 3.83 1.29 7.1 7.1 0 0 1 2.24 3.25l.09.29h4.78l-.13-.52a11.45 11.45 0 0 0-3.69-5.95 10.47 10.47 0 0 0-7.12-2.4 11.19 11.19 0 0 0-8.46 3.34 11.57 11.57 0 0 0-3.21 8.25 11.5 11.5 0 0 0 3.21 8.2A11.2 11.2 0 0 0 94.24 31zm27.3 0a11.31 11.31 0 0 0 8.46-3.31 11.5 11.5 0 0 0 3.21-8.2 11.57 11.57 0 0 0-3.21-8.25 11.3 11.3 0 0 0-8.49-3.34 11.17 11.17 0 0 0-8.45 3.34 11.57 11.57 0 0 0-3.22 8.25 11.51 11.51 0 0 0 3.22 8.2 11.17 11.17 0 0 0 8.48 3.31zm-4.82-17a6.13 6.13 0 0 1 4.82-2.08A6.25 6.25 0 0 1 126.4 14a7.79 7.79 0 0 1 1.88 5.46 7.75 7.75 0 0 1-1.88 5.42 6.24 6.24 0 0 1-4.86 2.12 6.13 6.13 0 0 1-4.82-2.08 7.7 7.7 0 0 1-1.92-5.42 7.78 7.78 0 0 1 1.92-5.5zm41.6 13.2a10.9 10.9 0 0 0 0-15.47c-2.11-2.16-5.29-3.26-9.44-3.26h-9.22v22h9.22c4.12-.01 7.33-1.11 9.44-3.27zM144.4 12.44h4.48c2.62 0 4.59.68 5.86 2a7.11 7.11 0 0 1 1.95 5 7.05 7.05 0 0 1-1.95 5c-1.27 1.34-3.24 2-5.86 2h-4.48zm23.56 14.05h18.05v3.97h-18.05zm0-9.22h18.05v3.97h-18.05zm0-8.8h18.05v3.97h-18.05z" class=" dark:fill-white fill-[#0b163a]"></path>
+                    <path d="M209.56 26.49H197.4V8.47h-4.74v21.99h16.9v-3.97zm50.64-7.37a4.81 4.81 0 0 0 1.64-1.78 5.32 5.32 0 0 0 .61-2.37 5.75 5.75 0 0 0-2.21-4.72A9.7 9.7 0 0 0 254 8.47h-10.4v22h10.79a11.49 11.49 0 0 0 6.66-1.64h0a5.66 5.66 0 0 0 2.36-4.83 5 5 0 0 0-1-3.08 6.5 6.5 0 0 0-2.21-1.8zm-11.86-6.68H254a4 4 0 0 1 2.73.72 2.41 2.41 0 0 1 .76 1.77 2.37 2.37 0 0 1-.75 1.73 4 4 0 0 1-2.74.73h-5.66zm9.27 13.43a5.94 5.94 0 0 1-3 .62h-6.24v-5.33h6.24a5.12 5.12 0 0 1 3 .73 2.34 2.34 0 0 1 .9 2 2.19 2.19 0 0 1-.9 1.98zm29.65-5.1a6.38 6.38 0 0 0-2.33-1.89 14.59 14.59 0 0 0-4.72-1.34 22.47 22.47 0 0 1-4.29-.94 3.52 3.52 0 0 1-1.37-.75 1.35 1.35 0 0 1-.44-1.07 2.32 2.32 0 0 1 1.12-2 5.52 5.52 0 0 1 3.17-.85 4.9 4.9 0 0 1 3.1 1 2.79 2.79 0 0 1 1.19 2.27v.42h4.92v-.42a5.82 5.82 0 0 0-1.49-4.2 9.33 9.33 0 0 0-3.42-2.29 15.67 15.67 0 0 0-2.17-.55A12.21 12.21 0 0 0 278.4 8a13.84 13.84 0 0 0-4 .63 8.06 8.06 0 0 0-3.53 2.08 5.44 5.44 0 0 0-1.24 1.77 5.33 5.33 0 0 0-.5 2.32 5 5 0 0 0 1 3.19 6.19 6.19 0 0 0 2.33 1.93 15.4 15.4 0 0 0 4.72 1.38 20.36 20.36 0 0 1 4.24 1 4.13 4.13 0 0 1 1.42.79 1.43 1.43 0 0 1 .44 1.11 2.19 2.19 0 0 1-1.28 2.07 8.15 8.15 0 0 1-3.57.72 6.36 6.36 0 0 1-3.53-.93 2.76 2.76 0 0 1-1.37-2.48v-.42h-4.93v.42a6.73 6.73 0 0 0 .45 2.54 6.83 6.83 0 0 0 1.27 2 8.35 8.35 0 0 0 3.68 2.17 14.83 14.83 0 0 0 4.37.67 17 17 0 0 0 4.36-.59 8.33 8.33 0 0 0 3.69-2.09 5.34 5.34 0 0 0 1.28-1.86 6.17 6.17 0 0 0 .46-2.46 5.12 5.12 0 0 0-.9-3.19z" fill="#8857ff"></path>
+                    <path d="M96.45 44.9l-.12-.24H92l-.11.24q-7.8 16.17-10.37 21.55l-.28.59h5.09l2.15-4.71h11.16l2.12 4.67h5.38l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.52-10.32a6.06 6.06 0 0 1 3.9 1.31 7.13 7.13 0 0 1 2.32 3.32l.09.28h4.85l-.13-.52a11.62 11.62 0 0 0-3.75-6 10.7 10.7 0 0 0-7.25-2.44 11.36 11.36 0 0 0-8.6 3.4 12.33 12.33 0 0 0 0 16.75 11.39 11.39 0 0 0 8.6 3.4 10.7 10.7 0 0 0 7.19-2.49 11.69 11.69 0 0 0 3.75-6.06l.13-.52h-4.85l-.09.29a7.1 7.1 0 0 1-2.28 3.31 6.11 6.11 0 0 1-3.91 1.31 6.26 6.26 0 0 1-4.92-2.12 7.83 7.83 0 0 1-2-5.53 7.86 7.86 0 0 1 2-5.57 6.25 6.25 0 0 1 4.95-2.12zm31.08-3.28l-.12-.24h-4.3l-.11.24q-7.8 16.17-10.33 21.55l-.28.59h5.09l2.15-4.71h11.13l2.09 4.67h5.37l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.25-13.84h-9.38V67h9.38c4.22 0 7.46-1.11 9.61-3.31a11.12 11.12 0 0 0 0-15.75c-2.15-2.16-5.39-3.28-9.61-3.28zm6 16.3c-1.29 1.37-3.3 2.06-6 2.06h-4.58V48.69h4.58c2.67 0 4.68.69 6 2.05a7.23 7.23 0 0 1 2 5.13 7.15 7.15 0 0 1-2.03 5.13zm15.24 6.09h18.37v-4.03h-13.56v-5.37h12.16v-4.02h-12.16v-4.94h13.56v-4.03h-18.37v22.39zm40.66-5.84q-5-11.85-6.89-16.29l-.11-.26h-6.69V67h4.8v-8.68l-.17-7.32q5.07 11.42 7 15.76l.11.24h3.89l.11-.25q4.22-9.84 6.74-15.68l-.17 7.21V67h4.85V44.66h-6.66zM276 54.26q-4.23-6.87-5.78-9.4l-.12-.2h-5.84l.42.65 8.86 13.34V67h4.8v-8.41q6.6-9.95 8.82-13.28l.43-.65H282z" class=" dark:fill-white fill-[#0b163a]"></path>
+                    <path d="M233.24 30.46h5.29l-1.32-2.75-9.21-19-.11-.24h-4.24l-.11.24q-7.65 15.87-10.18 21.16l-.28.59h5l7.59-16.63 7.41 16.39z" fill="#8857ff"></path>
+                </svg>
+            </a>
+            <button class="head-icon-phone">
+                <i class="head-icon"></i>
+            </button>
+        </header> -->
+        <header class="header-two">
+            <div class="header-two-div">
+                <a class="head-logo" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.19 75.53" class="logo-svg ">
+                        <path d="M26.17 15.11h0l-13.08 7.55v15.1h0v15.1l13.08-7.54v-15.1-.01h0l13.08-7.54V7.57l-13.08 7.54zm26.14 0v15.1l13.08-7.54V7.57l-13.08 7.54z" fill="#8857ff"></path>
+                        <path d="M52.32 15.12L39.24 7.56l-.01 15.1 13.08 7.55.01-15.09z" fill="#132ad1"></path>
+                        <g fill="#36ffe2">
+                            <path d="M52.3 15.12l13.09-7.55L52.31.01 39.23 7.56l13.07 7.56z"></path>
+                            <path d="M39.23 7.56L26.16 0 13.08 7.55.01 15.11l13.07 7.56 13.08-7.56h-.01l13.08-7.55z"></path>
+                        </g>
+                        <path d="M.01 15.11L0 60.41l26.15 15.11.01-15.1-13.06-7.55-.02-30.2L.01 15.11z" fill="#132ad1"></path>
+                        <path d="M26.17 60.41v.01 15.1l13.08-7.54v-.01-15.1l-13.08 7.54z" fill="#8857ff"></path>
+                        <path d="M39.24 52.87l-13.07-7.56-13.08 7.55 13.07 7.55h0l13.08-7.54h0 0z" fill="#36ffe2"></path>
+                        <path d="M52.31 60.42v15.1l13.08-7.54v-15.1l-13.08 7.54z" fill="#8857ff"></path>
+                        <path d="M52.32 60.43l-13.08-7.56-.01 15.1 13.08 7.56.01-15.1z" fill="#132ad1"></path>
+                        <path d="M52.3 60.43l13.09-7.55-13.08-7.56-13.08 7.55 13.07 7.56z" fill="#36ffe2"></path>
+                        <path d="M94.24 31a10.52 10.52 0 0 0 7.12-2.4 11.49 11.49 0 0 0 3.69-5.95l.13-.52h-4.78l-.09.28a7 7 0 0 1-2.24 3.25A6 6 0 0 1 94.24 27a6.15 6.15 0 0 1-4.83-2.08 7.7 7.7 0 0 1-1.91-5.42 7.73 7.73 0 0 1 1.92-5.5 6.11 6.11 0 0 1 4.82-2.08 6 6 0 0 1 3.83 1.29 7.1 7.1 0 0 1 2.24 3.25l.09.29h4.78l-.13-.52a11.45 11.45 0 0 0-3.69-5.95 10.47 10.47 0 0 0-7.12-2.4 11.19 11.19 0 0 0-8.46 3.34 11.57 11.57 0 0 0-3.21 8.25 11.5 11.5 0 0 0 3.21 8.2A11.2 11.2 0 0 0 94.24 31zm27.3 0a11.31 11.31 0 0 0 8.46-3.31 11.5 11.5 0 0 0 3.21-8.2 11.57 11.57 0 0 0-3.21-8.25 11.3 11.3 0 0 0-8.49-3.34 11.17 11.17 0 0 0-8.45 3.34 11.57 11.57 0 0 0-3.22 8.25 11.51 11.51 0 0 0 3.22 8.2 11.17 11.17 0 0 0 8.48 3.31zm-4.82-17a6.13 6.13 0 0 1 4.82-2.08A6.25 6.25 0 0 1 126.4 14a7.79 7.79 0 0 1 1.88 5.46 7.75 7.75 0 0 1-1.88 5.42 6.24 6.24 0 0 1-4.86 2.12 6.13 6.13 0 0 1-4.82-2.08 7.7 7.7 0 0 1-1.92-5.42 7.78 7.78 0 0 1 1.92-5.5zm41.6 13.2a10.9 10.9 0 0 0 0-15.47c-2.11-2.16-5.29-3.26-9.44-3.26h-9.22v22h9.22c4.12-.01 7.33-1.11 9.44-3.27zM144.4 12.44h4.48c2.62 0 4.59.68 5.86 2a7.11 7.11 0 0 1 1.95 5 7.05 7.05 0 0 1-1.95 5c-1.27 1.34-3.24 2-5.86 2h-4.48zm23.56 14.05h18.05v3.97h-18.05zm0-9.22h18.05v3.97h-18.05zm0-8.8h18.05v3.97h-18.05z" class=" dark:fill-white fill-[#0b163a]"></path>
+                        <path d="M209.56 26.49H197.4V8.47h-4.74v21.99h16.9v-3.97zm50.64-7.37a4.81 4.81 0 0 0 1.64-1.78 5.32 5.32 0 0 0 .61-2.37 5.75 5.75 0 0 0-2.21-4.72A9.7 9.7 0 0 0 254 8.47h-10.4v22h10.79a11.49 11.49 0 0 0 6.66-1.64h0a5.66 5.66 0 0 0 2.36-4.83 5 5 0 0 0-1-3.08 6.5 6.5 0 0 0-2.21-1.8zm-11.86-6.68H254a4 4 0 0 1 2.73.72 2.41 2.41 0 0 1 .76 1.77 2.37 2.37 0 0 1-.75 1.73 4 4 0 0 1-2.74.73h-5.66zm9.27 13.43a5.94 5.94 0 0 1-3 .62h-6.24v-5.33h6.24a5.12 5.12 0 0 1 3 .73 2.34 2.34 0 0 1 .9 2 2.19 2.19 0 0 1-.9 1.98zm29.65-5.1a6.38 6.38 0 0 0-2.33-1.89 14.59 14.59 0 0 0-4.72-1.34 22.47 22.47 0 0 1-4.29-.94 3.52 3.52 0 0 1-1.37-.75 1.35 1.35 0 0 1-.44-1.07 2.32 2.32 0 0 1 1.12-2 5.52 5.52 0 0 1 3.17-.85 4.9 4.9 0 0 1 3.1 1 2.79 2.79 0 0 1 1.19 2.27v.42h4.92v-.42a5.82 5.82 0 0 0-1.49-4.2 9.33 9.33 0 0 0-3.42-2.29 15.67 15.67 0 0 0-2.17-.55A12.21 12.21 0 0 0 278.4 8a13.84 13.84 0 0 0-4 .63 8.06 8.06 0 0 0-3.53 2.08 5.44 5.44 0 0 0-1.24 1.77 5.33 5.33 0 0 0-.5 2.32 5 5 0 0 0 1 3.19 6.19 6.19 0 0 0 2.33 1.93 15.4 15.4 0 0 0 4.72 1.38 20.36 20.36 0 0 1 4.24 1 4.13 4.13 0 0 1 1.42.79 1.43 1.43 0 0 1 .44 1.11 2.19 2.19 0 0 1-1.28 2.07 8.15 8.15 0 0 1-3.57.72 6.36 6.36 0 0 1-3.53-.93 2.76 2.76 0 0 1-1.37-2.48v-.42h-4.93v.42a6.73 6.73 0 0 0 .45 2.54 6.83 6.83 0 0 0 1.27 2 8.35 8.35 0 0 0 3.68 2.17 14.83 14.83 0 0 0 4.37.67 17 17 0 0 0 4.36-.59 8.33 8.33 0 0 0 3.69-2.09 5.34 5.34 0 0 0 1.28-1.86 6.17 6.17 0 0 0 .46-2.46 5.12 5.12 0 0 0-.9-3.19z" fill="#8857ff"></path>
+                        <path d="M96.45 44.9l-.12-.24H92l-.11.24q-7.8 16.17-10.37 21.55l-.28.59h5.09l2.15-4.71h11.16l2.12 4.67h5.38l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.52-10.32a6.06 6.06 0 0 1 3.9 1.31 7.13 7.13 0 0 1 2.32 3.32l.09.28h4.85l-.13-.52a11.62 11.62 0 0 0-3.75-6 10.7 10.7 0 0 0-7.25-2.44 11.36 11.36 0 0 0-8.6 3.4 12.33 12.33 0 0 0 0 16.75 11.39 11.39 0 0 0 8.6 3.4 10.7 10.7 0 0 0 7.19-2.49 11.69 11.69 0 0 0 3.75-6.06l.13-.52h-4.85l-.09.29a7.1 7.1 0 0 1-2.28 3.31 6.11 6.11 0 0 1-3.91 1.31 6.26 6.26 0 0 1-4.92-2.12 7.83 7.83 0 0 1-2-5.53 7.86 7.86 0 0 1 2-5.57 6.25 6.25 0 0 1 4.95-2.12zm31.08-3.28l-.12-.24h-4.3l-.11.24q-7.8 16.17-10.33 21.55l-.28.59h5.09l2.15-4.71h11.13l2.09 4.67h5.37l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.25-13.84h-9.38V67h9.38c4.22 0 7.46-1.11 9.61-3.31a11.12 11.12 0 0 0 0-15.75c-2.15-2.16-5.39-3.28-9.61-3.28zm6 16.3c-1.29 1.37-3.3 2.06-6 2.06h-4.58V48.69h4.58c2.67 0 4.68.69 6 2.05a7.23 7.23 0 0 1 2 5.13 7.15 7.15 0 0 1-2.03 5.13zm15.24 6.09h18.37v-4.03h-13.56v-5.37h12.16v-4.02h-12.16v-4.94h13.56v-4.03h-18.37v22.39zm40.66-5.84q-5-11.85-6.89-16.29l-.11-.26h-6.69V67h4.8v-8.68l-.17-7.32q5.07 11.42 7 15.76l.11.24h3.89l.11-.25q4.22-9.84 6.74-15.68l-.17 7.21V67h4.85V44.66h-6.66zM276 54.26q-4.23-6.87-5.78-9.4l-.12-.2h-5.84l.42.65 8.86 13.34V67h4.8v-8.41q6.6-9.95 8.82-13.28l.43-.65H282z" class=" dark:fill-white fill-[#0b163a]"></path>
+                        <path d="M233.24 30.46h5.29l-1.32-2.75-9.21-19-.11-.24h-4.24l-.11.24q-7.65 15.87-10.18 21.16l-.28.59h5l7.59-16.63 7.41 16.39z" fill="#8857ff"></path>
+                    </svg>
+                </a>
+                <a class href="/">Home</a>
+                <div>
+                    <div>
+                        <a
+                        class="menu-courses"
+                        id="headlessui-menu-button-1"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        Courses<i class='fa fa-chevron-down'></i>
+                        </a>
+                    </div>
+                </div>
+                <div >
+                    <div>
+                        <a
+                        class="menu-campuses"
+                        id="headlessui-menu-button-2"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Campuses<i class="fa fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="" href="https://codelabsacademy.com/workshops">Workshops</a>
+                <a class="" href="https://codelabsacademy.com/blog">Blog</a>
+                <a class="" href="https://codelabsacademy.com/contact-us">Contact Us</a>
+                <a class="" href="https://codelabsacademy.com/for-companies">For Companies</a>
+                <a class="button_apply"href="https://codelabsacademy.com/application">Apply Now</a>
+                <select class="flags" >
+                    <option selected="" value="🇬🇧">🇬🇧</option>
+                    <option value="🇩🇪">🇩🇪</option>
+                </select>
+                <button class="icon-moon">
+                    <i class="fa fa-moon-o" style="font-size:24px"></i>
+                </button>
+            </div>
+        </header>
+        <section class="section-one">
+            <main class="dimention_main">
+                <!-- ----------------------------------------WEB DEV PROGRAM? -------------------------------->
+                <section class="dimention-section">
+                        <div class="dimention_div">
+                            <h1 class="h1_style">Web Development Program</h1>
+                            <p class="">
+                                The web development bootcamp is an immersive program that will
+                                make you job-ready full-stack web developers. Learn how to
+                                code meaningful applications from scratch using first-class
+                                technologies, such as HTML/CSS and NodeJS.
+                            </p>
+                            <div class="div_one">
+                                    <span class="html_icon" >HTML</span>
+                                    <span class="css_icon">CSS</span>
+                                    <span class="Javascript_icon">Javascript</span>
+                            </div>
+                            <div class="div_two">
+                                    <svg
+                                        class="level_svg"
+                                        viewBox="0 0 23 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                        <path d="M0.5 15H5V24H0.5V15Z" fill="#8234E5"></path>
+                                        <g opacity="0.25">
+                                            <path d="M23 0H18.5V24H23V0Z" fill="#8234E5"></path>
+                                            <path d="M14 7.5H9.5V24H14V7.5Z" fill="#8234E5"></path>
+                                        </g>
+                                    </svg>
+                                    <p class="">Beginner Friendly</p>
+                            </div>
+                            <div class="div_three">
+                                    <svg
+                                        class="time_svg"
+                                        viewBox="0 0 30 30"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.985 0C6.705 0 0 6.72 0 15C0 23.28 6.705 30 14.985 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 14.985 0ZM15 27C8.37 27 3 21.63 3 15C3 8.37 8.37 3 15 3C21.63 3 27 8.37 27 15C27 21.63 21.63 27 15 27Z" fill="#8234E5"></path>
+                                        <path  d="M15.75 7.5H13.5V16.5L21.375 21.225L22.5 19.38L15.75 15.375V7.5Z" fill="#8234E5"></path>
+                                    </svg>
+                                    <div class="time">
+                                        <p>Full Time (40/week - 12 weeks)</p>
+                                        <p>Part Time (20/week - 27 weeks)</p>
+                                    </div>
+                            </div>
+                            <div class="pin_div">
+                                    <i class="pin_icon"></i>
+                                    <p>Learn anywhere</p>
+                            </div>
+                            <div class="remote_div">
+                                    <svg
+                                        class="remote_svg"
+                                        viewBox="0 0 28 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.5 6.75V1.5C21.5 0.675 20.825 0 20 0H2C1.175 0 0.5 0.675 0.5 1.5V16.5C0.5 17.325 1.175 18 2 18H20C20.825 18 21.5 17.325 21.5 16.5V11.25L27.5 17.25V0.75L21.5 6.75Z" fill="#8234E5" ></path>
+                                    </svg>
+                                    <p>Remote via online platform</p>
+                            </div>
+                        </div>
+                        <div class="position_img">
+                            <span  style="
+                                box-sizing: border-box;
+                                display: block;
+                                overflow: hidden;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                position: absolute;
+                                inset: 0px;">
+                                <img
+                                    alt="Web Development Program Cover Image"
+                                    src="./image/pic1.svg"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    class="size"
+                                    sizes="100vw"
+                                    style="
+                                        position: absolute;
+                                        inset: 0px;
+                                        box-sizing: border-box;
+                                        padding: 0px;
+                                        border: none;
+                                        margin: auto;
+                                        display: block;
+                                        width: 0px;
+                                        height: 0px;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        min-height: 100%;
+                                        max-height: 100%;
+                                        object-fit: contain;" 
+                                />
+                                <noscript></noscript>
+                            </span>
+                        </div>
+                </section>
+                <hr />
+                    <!-- ----------------------------------------What will you learn? -------------------------------->
+                <section class="section_position">
+                        <h2 class="">
+                            What will you learn?
+                        </h2>
+                        <div class="">
+                            <div class="section_position_div">
+                                <button
+                                    class="section_position_div_button"
+                                    id="headlessui-disclosure-button-27"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <p class="Bold">1</p>
+                                    <p class="Align_text">Preparatory Unit</p>
+                                    <i class='fa fa-chevron-down'></i>
+                                </button
+                                ><button
+                                    class="section_position_div_button"
+                                    id="headlessui-disclosure-button-29"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <p class="Bold">2</p>
+                                    <p class="Align_text">The Basics: HTML/CSS/JS</p>
+                                    <i class='fa fa-chevron-down'></i>
+                                </button
+                                ><button
+                                    class="section_position_div_button"
+                                    id="headlessui-disclosure-button-31"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <p class="Bold">3</p>
+                                    <p class="Align_text">NodeJS Introduction</p>
+                                    <i class='fa fa-chevron-down'></i>
+                                </button
+                                ><button
+                                    class="section_position_div_button"
+                                    id="headlessui-disclosure-button-33"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <p class="Bold">4</p>
+                                    <p class="Align_text">Modern Web Development with ReactJS</p>
+                                    <i class='fa fa-chevron-down'></i>
+                                </button>
+                                <button
+                                    class="section_position_div_button"
+                                    id="headlessui-disclosure-button-35"
+                                    type="button"
+                                    aria-expanded="false">
+                                    <p class="Bold">5</p>
+                                    <p class="Align_text"> Production Level APIs with ExpressJS </p>
+                                    <i class='fa fa-chevron-down'></i>
+                                </button>
+                            </div>
+                        </div>
+                </section>
+                <hr />
+                <!---------------------------------------SLider----------------------->
+                <section class="section_position_slider">
+                    <section class="section_position_slider_flex">
+                        <div class="swiper">
+                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-pagination" >
+                                <span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 1"
+                                    aria-current="true"
+                                ></span
+                                ><span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 2"
+                                ></span
+                                ><span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 3"
+                                ></span>
+                            </div>
+                            <div
+                                class="swiper-slide"
+                                data-swiper-slide-index="0"
+                                role="group"
+                                aria-label="1 / 3"
+                                style="width: 1143px">
+                                <div class="swiper-slide-size">
+                                    <div class="Div_text" >
+                                        <h2 class="Div_text_h2">Why choose us?</h2>
+                                        <h2
+                                        class="Div_text_h2_sec"
+                                        >
+                                        The essential concepts of Web Development
+                                        </h2>
+                                        <p
+                                        class="Div_text_para"
+                                        >
+                                        We've distilled the most essential parts of Web
+                                        Development into this course. You will spend your
+                                        time learning to use versatile programming
+                                        languages, algorithms, and platforms. Rather than
+                                        studying every possible coding language, we've
+                                        narrowed our curriculum down to the skills that are
+                                        most in demand on today's job market. This enables
+                                        us to prioritize depth over breadth. In each unit,
+                                        you'll spend most of your time building skills
+                                        through hands-on projects. These are designed to
+                                        prepare you for the work you'll do as a Web
+                                        developer, and for the coding exercises you will be
+                                        asked to complete in job interviews. That means
+                                        you'll graduate as a confident Web developer, ready
+                                        for new professional opportunities. Our program also
+                                        includes one-on-one career coaching. Our mentors
+                                        will help you to develop an attractive resume,
+                                        perfect your interview, and build a network. We
+                                        don't stop at simply teaching you Web development
+                                        skills; we're here to help you launch a career.
+                                        </p>
+                                    </div>
+                                    <div class="Div_image">
+                                        <span
+                                        style="
+                                            box-sizing: border-box;
+                                            display: block;
+                                            overflow: hidden;
+                                            width: initial;
+                                            height: initial;
+                                            background: none;
+                                            opacity: 1;
+                                            border: 0px;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            position: absolute;
+                                            inset: 0px;
+                                        "
+                                        ><img
+                                            alt="The essential concepts of Web Development cover picture"
+                                            src="./image/slider1.jpeg"
+                                            decoding="async"
+                                            data-nimg="fill"
+                                            class="size"
+                                            sizes="100vh"
+                                            style="
+                                            position: absolute;
+                                            inset: 0px;
+                                            box-sizing: border-box;
+                                            padding: 0px;
+                                            border: none;
+                                            margin: auto;
+                                            display: block;
+                                            width: 0px;
+                                            height: 0px;
+                                            min-width: 100%;
+                                            max-width: 100%;
+                                            min-height: 100%;
+                                            max-height: 100%;
+                                            object-fit: cover;
+                                            " /><noscript></noscript
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>                         
+                            <div class="Grid_direction" >
+                                <i class='fa fa-arrow-circle-left icon_direction_left'></i>
+                                <i class='fa fa-arrow-circle-right icon_direction_right'></i>
+                            </div> 
+                        </div>
+                    </section>
+                </section>
+                <hr />
+                    <!---------------------------------------who should apply----------------------->
+                <section class="who-section">
+                    <h2 class="who-section_H2">Who should apply?</h2>
+                    <div class="who-section-div" >
+                        <div class="who-section-div-one">
+                            <div class="who-section-div-one-img" >
+                                <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    position: absolute;
+                                    inset: 0px;
+                                "
+                                ><img
+                                    alt="image"
+                                    src="./image/div1.jpeg"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    sizes="100vw"
+                                    srcset=""
+                                    style="
+                                    position: absolute;
+                                    inset: 0px;
+                                    box-sizing: border-box;
+                                    padding: 0px;
+                                    border: none;
+                                    margin: auto;
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    min-width: 100%;
+                                    max-width: 100%;
+                                    min-height: 100%;
+                                    max-height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    " /><noscript></noscript>
+                                </span>
+                            </div>
+                            <div class="who-section-div-one-txt">
+                                <p class="who-section-P">New Graduates</p>
+                                <p class="who-section-P2">
+                                If you’re a college student or have recently graduated,
+                                skills in coding and Web Development are some of the most
+                                marketable traits you can have on the job market.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="who-section-div-two">
+                            <div class="who-section-div-one-img">
+                                <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    position: absolute;
+                                    inset: 0px;
+                                "
+                                ><img
+                                    alt="image"
+                                    src="./image/div2.jpeg"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    sizes="100vw"
+                                    srcset=""
+                                    style="
+                                    position: absolute;
+                                    inset: 0px;
+                                    box-sizing: border-box;
+                                    padding: 0px;
+                                    border: none;
+                                    margin: auto;
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    min-width: 100%;
+                                    max-width: 100%;
+                                    min-height: 100%;
+                                    max-height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    " /><noscript></noscript>
+                                </span>
+                            </div>
+                            <div class="who-section-div-one-txt">
+                                <p class="who-section-P">Career Growth</p>
+                                <p class="who-section-P2">
+                                If you're working in a field that's using new technology,
+                                learning Web Development is an easy way to make yourself a
+                                stronger and more valuable employee. Learning to code
+                                opens up new possibilities, and perhaps even new
+                                promotions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="who-section-div-three">
+                            <div class="who-section-div-one-img">
+                                <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    position: absolute;
+                                    inset: 0px;
+                                "
+                                ><img
+                                    alt="image"
+                                    src="./image/div3.jpeg"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    sizes="100vw"
+                                    srcset=""
+                                    style="
+                                    position: absolute;
+                                    inset: 0px;
+                                    box-sizing: border-box;
+                                    padding: 0px;
+                                    border: none;
+                                    margin: auto;
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    min-width: 100%;
+                                    max-width: 100%;
+                                    min-height: 100%;
+                                    max-height: 100%;
+                                    object-fit: cover;
+                                    object-position: center center;
+                                    " /><noscript></noscript>
+                                </span>
+                            </div>
+                            <div class="who-section-div-one-txt">
+                                <p class="who-section-P">Career Change</p>
+                                <p class="who-section-P2">
+                                Whether you’re interested in diving into the broad field
+                                of Web Development to change your career trajectory, then
+                                this bootcamp is definitely for you! It was meticulously
+                                created to be appealing to the largest audience possible.
+                                Consequently, all backgrounds are welcome, as long as you
+                                can demonstrate determination to work through and complete
+                                all required course activities.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="who-section-div-four">
+                            <div class="who-section-div-one-img">
+                                <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    position: absolute;
+                                    inset: 0px;
+                                "
+                                ><img
+                                    alt="image"
+                                    src="./image/div4.jpeg"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    sizes="100vw"
+                                    srcset=""
+                                    style="
+                                    position: absolute;
+                                    inset: 0px;
+                                    box-sizing: border-box;
+                                    padding: 0px;
+                                    border: none;
+                                    margin: auto;
+                                    display: block;
+                                    width: 0px;
+                                    height: 0px;
+                                    min-width: 100%;
+                                    max-width: 100%;
+                                    min-height: 100%;
+                                    max-height: 100%;
+                                    object-fit: cover;
+                                    object-position: left center;
+                                    " /><noscript></noscript>
+                                </span>
+                            </div>
+                            <div class="who-section-div-one-txt">
+                                <p class="who-section-P">Hard Workers</p>
+                                <p class="who-section-P2">
+                                No matter what your goal is, you will only receive from
+                                this bootcamp as much as you give: You will need to put in
+                                a lot of hard work, but the outcome is worth it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                    <!---------------------------------------start your journey----------------------->
+                <section>
+                    <section class="section-start">
+                        <div class="section-start-div">
+                            <div class="section-start-div-one">
+                                <h4 class="section-start-div-one-H4">
+                                    Start your journey
+                                </h4>
+                                <h2 class="section-start-div-one-H2">
+                                    Interactive
+                                    <span class="section-start-div-span">one-on-one learning</span> on
+                                    your own schedule
+                                </h2>
+                            </div>
+                            <div class="section-start-div-two">
+                                <div
+                                    class="section-start-Div-two"
+                                    style="top: 0px; height: 50px">
+                                </div>
+                                <button class="section-start-div-two-button" >
+                                    <i class="fa-solid fa-circle icon-circle"></i>Virtual
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-virtual">
+                            <div class="section-virtual-img">
+                                <span
+                                    style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    position: absolute;
+                                    inset: 0px;
+                                    "
+                                    ><img
+                                    alt="illustration"
+                                    src="./image/virtual.png"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    class="transition-all"
+                                    sizes="100vw"
+                                    srcset=""
+                                    style="
+                                        position: absolute;
+                                        inset: 0px;
+                                        box-sizing: border-box;
+                                        padding: 0px;
+                                        border: none;
+                                        margin: auto;
+                                        display: block;
+                                        width: 0px;
+                                        height: 0px;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        min-height: 100%;
+                                        max-height: 100%;
+                                        object-fit: contain;
+                                    " /><noscript></noscript>
+                                </span>
+                            </div>
+                            <div class="section-virtual-txt">
+                                <h4 class="section-virtual-txt-h4">Virtual</h4>
+                                <p class="section-virtual-txt-p">
+                                    Our Web Development online course includes all of the
+                                    elements of a traditional in-person program. We think of
+                                    our remote learning option as a virtual campus. With
+                                    online collaboration tools and optional social events, you
+                                    will get to know your classmates and truly learn together.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <hr />
+                <!----------------------------------------- Frequently Asked Questions -------------------------->
+                <section class="section_position">
+                    <h2 class="" >
+                        Frequently Asked Questions
+                    </h2>
+                    <div class="">
+                        <div class="section_position_div">
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-37"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">How long is this program?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                type="button"
+                                aria-expanded="false" >
+                                <p class="Align_text">Can I do the bootcamp while working a full-time job?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button
+                            ><button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-41"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">Do I need a background in programming or Computer Science?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-43"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">
+                                    What does a typical day of the Web development bootcamp
+                                    look like?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-45"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">What will I learn?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button
+                            ><button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-47"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text"> Will I get to do any hands-on projects?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-49"
+                                type="button"
+                                aria-expanded="false" >
+                                <p class="Align_text">
+                                    What jobs will the Web Development program prepare me for?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-51"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">What's the class size?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-53"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">
+                                    Is the Web Development bootcamp online or in person?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button
+                            ><button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-55"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">
+                                    What does the application process look like?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-57"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">
+                                    What language will the program be taught in?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                            <button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-59"
+                                type="button"
+                                aria-expanded="false">
+                                <p class="Align_text">
+                                    Is there any funding available?
+                                </p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button
+                            ><button
+                                class="section_position_div_button"
+                                id="headlessui-disclosure-button-61"
+                                type="button"
+                                aria-expanded="false"
+                                >
+                                <p class="Align_text">Other questions?</p>
+                                <i class='fa fa-chevron-down'></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <hr />
+            </main> 
+        </section>
+        <!---------------------------- Footer ------------------------------------------------->
+        <footer class="section-footer">
+            <a class="section-footer-logo" href="https://codelabsacademy.com/">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 288.19 75.53"
+                    class="section-footer-logo-svg">
+                    <path 
+                        d="M26.17 15.11h0l-13.08 7.55v15.1h0v15.1l13.08-7.54v-15.1-.01h0l13.08-7.54V7.57l-13.08 7.54zm26.14 0v15.1l13.08-7.54V7.57l-13.08 7.54z" 
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M52.32 15.12L39.24 7.56l-.01 15.1 13.08 7.55.01-15.09z"
+                        fill="white"
+                    ></path>
+                    <g fill="white">
+                        <path
+                        d="M52.3 15.12l13.09-7.55L52.31.01 39.23 7.56l13.07 7.56z"
+                        ></path>
+                        <path
+                        d="M39.23 7.56L26.16 0 13.08 7.55.01 15.11l13.07 7.56 13.08-7.56h-.01l13.08-7.55z"
+                        ></path>
+                    </g>
+                    <path
+                        d="M.01 15.11L0 60.41l26.15 15.11.01-15.1-13.06-7.55-.02-30.2L.01 15.11z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M26.17 60.41v.01 15.1l13.08-7.54v-.01-15.1l-13.08 7.54z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M39.24 52.87l-13.07-7.56-13.08 7.55 13.07 7.55h0l13.08-7.54h0 0z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M52.31 60.42v15.1l13.08-7.54v-15.1l-13.08 7.54z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M52.32 60.43l-13.08-7.56-.01 15.1 13.08 7.56.01-15.1z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M52.3 60.43l13.09-7.55-13.08-7.56-13.08 7.55 13.07 7.56z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M94.24 31a10.52 10.52 0 0 0 7.12-2.4 11.49 11.49 0 0 0 3.69-5.95l.13-.52h-4.78l-.09.28a7 7 0 0 1-2.24 3.25A6 6 0 0 1 94.24 27a6.15 6.15 0 0 1-4.83-2.08 7.7 7.7 0 0 1-1.91-5.42 7.73 7.73 0 0 1 1.92-5.5 6.11 6.11 0 0 1 4.82-2.08 6 6 0 0 1 3.83 1.29 7.1 7.1 0 0 1 2.24 3.25l.09.29h4.78l-.13-.52a11.45 11.45 0 0 0-3.69-5.95 10.47 10.47 0 0 0-7.12-2.4 11.19 11.19 0 0 0-8.46 3.34 11.57 11.57 0 0 0-3.21 8.25 11.5 11.5 0 0 0 3.21 8.2A11.2 11.2 0 0 0 94.24 31zm27.3 0a11.31 11.31 0 0 0 8.46-3.31 11.5 11.5 0 0 0 3.21-8.2 11.57 11.57 0 0 0-3.21-8.25 11.3 11.3 0 0 0-8.49-3.34 11.17 11.17 0 0 0-8.45 3.34 11.57 11.57 0 0 0-3.22 8.25 11.51 11.51 0 0 0 3.22 8.2 11.17 11.17 0 0 0 8.48 3.31zm-4.82-17a6.13 6.13 0 0 1 4.82-2.08A6.25 6.25 0 0 1 126.4 14a7.79 7.79 0 0 1 1.88 5.46 7.75 7.75 0 0 1-1.88 5.42 6.24 6.24 0 0 1-4.86 2.12 6.13 6.13 0 0 1-4.82-2.08 7.7 7.7 0 0 1-1.92-5.42 7.78 7.78 0 0 1 1.92-5.5zm41.6 13.2a10.9 10.9 0 0 0 0-15.47c-2.11-2.16-5.29-3.26-9.44-3.26h-9.22v22h9.22c4.12-.01 7.33-1.11 9.44-3.27zM144.4 12.44h4.48c2.62 0 4.59.68 5.86 2a7.11 7.11 0 0 1 1.95 5 7.05 7.05 0 0 1-1.95 5c-1.27 1.34-3.24 2-5.86 2h-4.48zm23.56 14.05h18.05v3.97h-18.05zm0-9.22h18.05v3.97h-18.05zm0-8.8h18.05v3.97h-18.05z"
+                        fill="white">
+                    ></path>
+                    <path
+                        d="M209.56 26.49H197.4V8.47h-4.74v21.99h16.9v-3.97zm50.64-7.37a4.81 4.81 0 0 0 1.64-1.78 5.32 5.32 0 0 0 .61-2.37 5.75 5.75 0 0 0-2.21-4.72A9.7 9.7 0 0 0 254 8.47h-10.4v22h10.79a11.49 11.49 0 0 0 6.66-1.64h0a5.66 5.66 0 0 0 2.36-4.83 5 5 0 0 0-1-3.08 6.5 6.5 0 0 0-2.21-1.8zm-11.86-6.68H254a4 4 0 0 1 2.73.72 2.41 2.41 0 0 1 .76 1.77 2.37 2.37 0 0 1-.75 1.73 4 4 0 0 1-2.74.73h-5.66zm9.27 13.43a5.94 5.94 0 0 1-3 .62h-6.24v-5.33h6.24a5.12 5.12 0 0 1 3 .73 2.34 2.34 0 0 1 .9 2 2.19 2.19 0 0 1-.9 1.98zm29.65-5.1a6.38 6.38 0 0 0-2.33-1.89 14.59 14.59 0 0 0-4.72-1.34 22.47 22.47 0 0 1-4.29-.94 3.52 3.52 0 0 1-1.37-.75 1.35 1.35 0 0 1-.44-1.07 2.32 2.32 0 0 1 1.12-2 5.52 5.52 0 0 1 3.17-.85 4.9 4.9 0 0 1 3.1 1 2.79 2.79 0 0 1 1.19 2.27v.42h4.92v-.42a5.82 5.82 0 0 0-1.49-4.2 9.33 9.33 0 0 0-3.42-2.29 15.67 15.67 0 0 0-2.17-.55A12.21 12.21 0 0 0 278.4 8a13.84 13.84 0 0 0-4 .63 8.06 8.06 0 0 0-3.53 2.08 5.44 5.44 0 0 0-1.24 1.77 5.33 5.33 0 0 0-.5 2.32 5 5 0 0 0 1 3.19 6.19 6.19 0 0 0 2.33 1.93 15.4 15.4 0 0 0 4.72 1.38 20.36 20.36 0 0 1 4.24 1 4.13 4.13 0 0 1 1.42.79 1.43 1.43 0 0 1 .44 1.11 2.19 2.19 0 0 1-1.28 2.07 8.15 8.15 0 0 1-3.57.72 6.36 6.36 0 0 1-3.53-.93 2.76 2.76 0 0 1-1.37-2.48v-.42h-4.93v.42a6.73 6.73 0 0 0 .45 2.54 6.83 6.83 0 0 0 1.27 2 8.35 8.35 0 0 0 3.68 2.17 14.83 14.83 0 0 0 4.37.67 17 17 0 0 0 4.36-.59 8.33 8.33 0 0 0 3.69-2.09 5.34 5.34 0 0 0 1.28-1.86 6.17 6.17 0 0 0 .46-2.46 5.12 5.12 0 0 0-.9-3.19z"
+                        fill="white"
+                    ></path>
+                    <path
+                        d="M96.45 44.9l-.12-.24H92l-.11.24q-7.8 16.17-10.37 21.55l-.28.59h5.09l2.15-4.71h11.16l2.12 4.67h5.38l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.52-10.32a6.06 6.06 0 0 1 3.9 1.31 7.13 7.13 0 0 1 2.32 3.32l.09.28h4.85l-.13-.52a11.62 11.62 0 0 0-3.75-6 10.7 10.7 0 0 0-7.25-2.44 11.36 11.36 0 0 0-8.6 3.4 12.33 12.33 0 0 0 0 16.75 11.39 11.39 0 0 0 8.6 3.4 10.7 10.7 0 0 0 7.19-2.49 11.69 11.69 0 0 0 3.75-6.06l.13-.52h-4.85l-.09.29a7.1 7.1 0 0 1-2.28 3.31 6.11 6.11 0 0 1-3.91 1.31 6.26 6.26 0 0 1-4.92-2.12 7.83 7.83 0 0 1-2-5.53 7.86 7.86 0 0 1 2-5.57 6.25 6.25 0 0 1 4.95-2.12zm31.08-3.28l-.12-.24h-4.3l-.11.24q-7.8 16.17-10.33 21.55l-.28.59h5.09l2.15-4.71h11.13l2.09 4.67h5.37l-.29-.59q-6.93-14.34-10.4-21.51zm-6.19 13.6l3.84-8.41 3.81 8.41zm33.25-13.84h-9.38V67h9.38c4.22 0 7.46-1.11 9.61-3.31a11.12 11.12 0 0 0 0-15.75c-2.15-2.16-5.39-3.28-9.61-3.28zm6 16.3c-1.29 1.37-3.3 2.06-6 2.06h-4.58V48.69h4.58c2.67 0 4.68.69 6 2.05a7.23 7.23 0 0 1 2 5.13 7.15 7.15 0 0 1-2.03 5.13zm15.24 6.09h18.37v-4.03h-13.56v-5.37h12.16v-4.02h-12.16v-4.94h13.56v-4.03h-18.37v22.39zm40.66-5.84q-5-11.85-6.89-16.29l-.11-.26h-6.69V67h4.8v-8.68l-.17-7.32q5.07 11.42 7 15.76l.11.24h3.89l.11-.25q4.22-9.84 6.74-15.68l-.17 7.21V67h4.85V44.66h-6.66zM276 54.26q-4.23-6.87-5.78-9.4l-.12-.2h-5.84l.42.65 8.86 13.34V67h4.8v-8.41q6.6-9.95 8.82-13.28l.43-.65H282z"
+                        fill="white">
+                    ></path>
+                    <path
+                        d="M233.24 30.46h5.29l-1.32-2.75-9.21-19-.11-.24h-4.24l-.11.24q-7.65 15.87-10.18 21.16l-.28.59h5l7.59-16.63 7.41 16.39z"
+                        fill="white"
+                    ></path>
+                </svg>
+            </a>
+            <div class="flex-grow"></div>
+            <div class="section-footer-txt">
+                <p>
+                    Code Labs Academy ©
+                            2022
+                    
+                    All rights reserved.
+                </p>
+                <a class="section-footer-a" href="https://codelabsacademy.com/imprint">Imprint</a>
+            </div>
+            <div class="section-footer-socialMedia-icon">
+                <div class="socialMedia-icon-possition">
+                    <a href="https://www.linkedin.com/school/codelabsacademy" class="icon-dim">
+                        <svg
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.meetup.com/pro/code-labs-academy/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="icon-dim">
+                        <svg
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Meetup</title>
+                            <path
+                                d="M6.98.555a.518.518 0 0 0-.105.011.53.53 0 1 0 .222 1.04.533.533 0 0 0 .409-.633.531.531 0 0 0-.526-.418zm6.455.638a.984.984 0 0 0-.514.143.99.99 0 1 0 1.02 1.699.99.99 0 0 0 .34-1.36.992.992 0 0 0-.846-.482zm-3.03 2.236a5.029 5.029 0 0 0-4.668 3.248 3.33 3.33 0 0 0-1.46.551 3.374 3.374 0 0 0-.94 4.562 3.634 3.634 0 0 0-.605 4.649 3.603 3.603 0 0 0 2.465 1.597c.018.732.238 1.466.686 2.114a3.9 3.9 0 0 0 5.423.992c.068-.047.12-.106.184-.157.987.881 2.47 1.026 3.607.24a2.91 2.91 0 0 0 1.162-1.69 4.238 4.238 0 0 0 2.584-.739 4.274 4.274 0 0 0 1.19-5.789 2.466 2.466 0 0 0 .433-3.308 2.448 2.448 0 0 0-1.316-.934 4.436 4.436 0 0 0-.776-2.873 4.467 4.467 0 0 0-5.195-1.656 5.106 5.106 0 0 0-2.773-.807zm-5.603.817a.759.759 0 0 0-.423.135.758.758 0 1 0 .863 1.248.757.757 0 0 0 .193-1.055.758.758 0 0 0-.633-.328zm15.994 2.37a.842.842 0 0 0-.47.151.845.845 0 1 0 1.175.215.845.845 0 0 0-.705-.365zm-8.15 1.028c.063 0 .124.005.182.014a.901.901 0 0 1 .45.187c.169.134.273.241.432.393.24.227.414.089.534.02.208-.122.369-.219.984-.208.633.011 1.363.237 1.514 1.317.168 1.199-1.966 4.289-1.817 5.722.106 1.01 1.815.299 1.96 1.22.186 1.198-2.136.753-2.667.493-.832-.408-1.337-1.34-1.12-2.26.16-.688 1.7-3.498 1.757-3.93.059-.44-.177-.476-.324-.484-.19-.01-.34.081-.526.362-.169.255-2.082 4.085-2.248 4.398-.296.56-.67.694-1.044.674-.548-.029-.798-.32-.72-.848.047-.31 1.26-3.049 1.323-3.476.039-.265-.013-.546-.275-.68-.263-.135-.572.07-.664.227-.128.215-1.848 4.706-2.032 5.038-.316.576-.65.76-1.152.784-1.186.056-2.065-.92-1.678-2.116.173-.532 1.316-4.571 1.895-5.599.389-.69 1.468-1.216 2.217-.892.387.167.925.437 1.084.507.366.163.759-.277.913-.412.155-.134.302-.276.49-.357.142-.06.343-.095.532-.094zm10.88 2.057a.468.468 0 0 0-.093.011.467.467 0 0 0-.36.555.47.47 0 0 0 .557.36.47.47 0 0 0 .36-.557.47.47 0 0 0-.464-.37zm-22.518.81a.997.997 0 0 0-.832.434 1 1 0 1 0 1.39-.258 1 1 0 0 0-.558-.176zm21.294 2.094a.635.635 0 0 0-.127.013.627.627 0 0 0-.48.746.628.628 0 0 0 .746.483.628.628 0 0 0 .482-.746.63.63 0 0 0-.621-.496zm-18.24 6.097a.453.453 0 0 0-.092.012.464.464 0 1 0 .195.908.464.464 0 0 0 .356-.553.465.465 0 0 0-.459-.367zm13.675 1.55a1.044 1.044 0 0 0-.583.187 1.047 1.047 0 1 0 1.456.265 1.044 1.044 0 0 0-.873-.451zM11.4 22.154a.643.643 0 0 0-.36.115.646.646 0 0 0-.164.899.646.646 0 0 0 .899.164.646.646 0 0 0 .164-.898.646.646 0 0 0-.54-.28z"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer> 
+    </main> 
+</body>
+</html>
